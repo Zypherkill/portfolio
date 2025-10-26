@@ -15,5 +15,6 @@
 @media (max-width: 1250px) {
 	.mainContent {
 		padding: 1rem;
+		gap: 10rem;
 	}
 }
