@@ -32,11 +32,6 @@
 
 @media (max-width: 1020px) {
 	.navigation {
-		width: 70%;
-		padding: 1rem;
-		position: fixed;
-		top: 0;
-		z-index: 1000; /* så att den ligger ovanpå innehållet */
-		background-color: var(--bakgrundsfärg, #fff); /* valfritt, för tydlighet */
+		display: none;
 	}
 }
