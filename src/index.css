@@ -66,8 +66,4 @@ button:hover,
 		flex-direction: column;
 		gap: 5rem;
 	}
-
-	.scroll-to-top {
-		display: block;
-	}
 }

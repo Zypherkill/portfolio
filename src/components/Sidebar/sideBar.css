@@ -96,6 +96,7 @@
 		width: 100%;
 		display: flex;
 		padding: 4rem 1rem;
+		justify-content: flex-end;
 	}
 
 	.sidebar__info {
