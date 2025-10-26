@@ -42,7 +42,6 @@ body::after {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	justify-content: center;
-	overflow-x: hidden;
 }
 
 button:hover,
@@ -65,5 +64,6 @@ button:hover,
 		display: flex;
 		flex-direction: column;
 		gap: 5rem;
+		overflow-y: scroll;
 	}
 }
