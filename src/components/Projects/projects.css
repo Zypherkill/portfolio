@@ -1,0 +1,87 @@
+.projects-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	gap: 1rem;
+	height: 100%;
+}
+
+.project-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	background-color: var(--primary-button-color);
+	padding: 1.3rem;
+	gap: 1rem;
+}
+
+.mobile-info {
+	width: 55%;
+	height: 100%;
+	background-color: transparent;
+	gap: 2.5rem;
+
+	.project-info__title {
+		font-size: 2.5rem;
+	}
+}
+
+.project-info__tools {
+	display: flex;
+	gap: 1rem;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.project-info__button-container {
+	display: flex;
+	gap: 1rem;
+	width: 100%;
+}
+
+.project-info__title {
+	color: var(--primary-font-color);
+	font-size: clamp(1.5rem, 1, 7rem, 2rem);
+}
+
+.project-info__text {
+	font-size: 1.1rem;
+}
+
+.project-info__button {
+	padding: 0.5rem;
+	min-width: 8rem;
+	border: none;
+	font-size: 1.2rem;
+	border-radius: 10px;
+	transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+
+.demo-button,
+.github-button {
+	background-color: var(--primary-font-color);
+}
+
+.projects-box {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	gap: 1rem;
+	width: 100%;
+	justify-content: center;
+}
+
+.projectCard:hover {
+	transform: scale(1.01);
+}
+
+
+@media (max-width: 600px) {
+	.mobile-info {
+		width: 90%;
+	}
+}

@@ -1,0 +1,63 @@
+:root {
+	--body-color: #15202b;
+	--primary-font-color: rgb(31, 140, 194);
+	--secondary-font-color: #ffffff;
+	--primary-button-color: #213142;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	background: linear-gradient(#15202b);
+
+	position: relative;
+	overflow-x: hidden;
+}
+
+body::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent
+		url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+	opacity: 0.3;
+	pointer-events: none;
+}
+
+.app {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: center;
+}
+
+button:hover,
+.sidebar__button--2:hover, .project-info__button:hover {
+	transform: scale(1.03);
+	cursor: pointer;
+}
+
+.title {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 2rem;
+	font-size: 2rem;
+	color: var(--secondary-font-color);
+}
+
+@media (max-width: 1020px) {
+	.app {
+		display: flex;
+		flex-direction: column;
+		gap: 10rem;
+	}
+}

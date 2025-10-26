@@ -1,0 +1,13 @@
+.about-section {
+    background-color: var(--primary-button-color);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    .about-section__text {
+        padding:  1.5rem;
+    }
+}
