@@ -95,6 +95,7 @@
 		position: static;
 		width: 100%;
 		display: flex;
+		padding: 4rem 1rem;
 	}
 
 	.sidebar__info {
