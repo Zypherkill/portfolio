@@ -63,7 +63,10 @@ const Sidebar = ({ projects, skills, about, contact }) => {
 					{' '}
 					Kontakta mig
 				</button>
-				<a href='/CV_Hannes.pdf' download className='sidebar__button--2'>
+				<a
+					href={`${import.meta.env.BASE_URL}CV_Hannes.pdf`}
+					download
+					className='sidebar__button--2'>
 					Ladda ned CV
 				</a>
 			</div>
