@@ -20,7 +20,6 @@
 	align-items: center;
 	gap: 1.5rem;
 	width: 70%;
-	height: 50rem;
 }
 .sidebar__image {
 	object-fit: cover;
@@ -104,6 +103,7 @@
 
 	.sidebar__content{
 		width: 90%;
+		margin-top: 10rem;
 
 		button, a {
 			width: 100%;
