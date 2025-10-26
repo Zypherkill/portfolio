@@ -1,9 +1,8 @@
 .navigation {
-	width: 40rem;
-	padding: 2rem;
+	width: 100%;
+	padding: 1.5rem;
 	background: linear-gradient( #213142);
 	border-radius: 50px;
-	top: 5rem;
 	z-index: 999;
 }
 .navigation ul {
@@ -30,12 +29,14 @@
 }
 
 
-@media (max-width: 1020px) {
+@media (max-width: 1024px) {
 	.navigation {
-		width: 70%;
+		width: 100%;
 		padding: 1rem;
 		position: fixed;
+		border-radius: 0;
 		top: 0;
 		z-index: 1000; /* så att den ligger ovanpå innehållet */
+
 	}
 }

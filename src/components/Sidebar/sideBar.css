@@ -6,7 +6,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: 8rem;
+	gap: 3rem;
 	position: fixed;
 	top: 0;
 	align-self: start;
@@ -19,7 +19,7 @@
 	justify-content: space-between;
 	align-items: center;
 	gap: 1.5rem;
-	width: 50%;
+	width: 70%;
 }
 .sidebar__image {
 	object-fit: cover;
@@ -27,8 +27,8 @@
 	margin-bottom: 1rem;
 	border-radius: 40px;
 	border: 2px solid var(--primary-font-color);
-	width: 350px;
-	height: 450px;
+	width: 220px;
+	height: 300px;
 }
 
 .sidebar__name {
@@ -38,13 +38,13 @@
 }
 
 .sidebar__tagline {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	color: var(--secondary-font-color);
 	margin-bottom: 0.5rem;
 }
 
 .sidebar__info {
-	font-size: 1.1rem;
+	font-size: 1rem;
 	width: 100%;
 	text-align: center;
 }
@@ -52,11 +52,11 @@
 .sidebar__button,
 .sidebar__button--2 {
 	padding: 1rem;
-	width: 100%;
+	width: 60%;
 	background-color: var(--primary-button-color);
 	border: none;
 	color: white;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	border-radius: 20px;
 	transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 
@@ -75,7 +75,7 @@
 .sidebar__socials {
 	display: flex;
 	gap: 1rem;
-	font-size: 2.5rem;
+	font-size: 2.3rem;
 	align-items: center;
 }
 
@@ -90,13 +90,11 @@
 	transform: scale(1.1);
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1024px) {
 	.sidebar {
 		position: static;
 		width: 100%;
 		display: flex;
-		justify-content: space-around;
-		padding: 0 1rem ;
 	}
 
 	.sidebar__info {
@@ -105,7 +103,11 @@
 	}
 
 	.sidebar__content{
-		width: 70%;
+		width: 90%;
+
+		button, a {
+			width: 100%;
+		}
 	}
 }
 

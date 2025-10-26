@@ -18,6 +18,10 @@ body {
 	background: linear-gradient(#15202b);
 
 	position: relative;
+}
+
+html,
+body {
 	overflow-x: hidden;
 }
 
@@ -42,7 +46,8 @@ body::after {
 }
 
 button:hover,
-.sidebar__button--2:hover, .project-info__button:hover {
+.sidebar__button--2:hover,
+.project-info__button:hover {
 	transform: scale(1.03);
 	cursor: pointer;
 }
@@ -55,35 +60,11 @@ button:hover,
 	color: var(--secondary-font-color);
 }
 
-.scroll-to-top {
-	position: fixed;
-	bottom: 1.5rem;
-	right: 1.5rem;
-	background-color: #111;
-	color: #fff;
-	border: none;
-	border-radius: 50%;
-	width: 3rem;
-	height: 3rem;
-	font-size: 1.5rem;
-	cursor: pointer;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-	z-index: 1000;
-	transition: all 0.3s ease;
-	display: none;
-}
-
-.scroll-to-top:hover {
-	background-color: #444;
-	transform: translateY(-3px);
-}
-
-@media (max-width: 1020px) {
+@media (max-width: 1024px) {
 	.app {
 		display: flex;
 		flex-direction: column;
-		gap: 10rem;
-		
+		gap: 5rem;
 	}
 
 	.scroll-to-top {

@@ -8,7 +8,7 @@ import FadeInSection from '../FadeInSection/FadeInSection';
 function MainContent({ projectsRef, skillsRef, aboutRef, contactRef }) {
 	return (
 		<aside className='mainContent'>
-			<FadeInSection ref={projectsRef} direction='right'>
+			<FadeInSection ref={projectsRef} direction='left'>
 				<Projects />
 			</FadeInSection>
 
@@ -16,7 +16,7 @@ function MainContent({ projectsRef, skillsRef, aboutRef, contactRef }) {
 				<SkillWheel />
 			</FadeInSection>
 
-			<FadeInSection ref={aboutRef} direction='right'>
+			<FadeInSection ref={aboutRef} direction='left'>
 				<About />
 			</FadeInSection>
 

@@ -1,20 +1,21 @@
 .mainContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    grid-column: 2/3;
-    padding: 3rem;
-    padding-top: 4rem;
-    gap: 7rem;
-    scroll-behavior: smooth;
-    width: 100%;
-    height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	color: white;
+	grid-column: 2/3;
+	padding: 3rem;
+	padding-top: 4rem;
+	gap: 7rem;
+	scroll-behavior: smooth;
+	width: 100%;
+	height: 100vh;
+	overflow-x: hidden;
 }
 
 @media (max-width: 1250px) {
-    .mainContent {
-        padding: 1rem;
-    }
+	.mainContent {
+		padding: 1rem;
+	}
 }

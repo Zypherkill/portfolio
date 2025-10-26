@@ -23,12 +23,6 @@ function App() {
 				aboutRef={aboutRef}
 				contactRef={contactRef}
 			/>
-
-			<button
-				className='scroll-to-top'
-				onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-				↑
-			</button>
 		</div>
 	);
 }

@@ -2,7 +2,11 @@ import './navBar.css';
 
 function NavBar({ projects, skills, about, contact }) {
 	const scrollToSection = (ref) => {
-		ref.current?.scrollIntoView({ behavior: 'smooth' });
+		ref.current?.scrollIntoView({
+			behavior: 'smooth',
+			block: 'start',
+			inline: 'nearest', // 👈 hindrar horisontell scroll
+		});
 	};
 
 	return (
